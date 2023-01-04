@@ -19,7 +19,8 @@ dotnet new sln
 dotnet sln add $(echo $parent_folder | tr -d '\r').csproj
 
 # add package(s) to project
-dotnet add package Microsoft.EntityFrameworkCore
+dotnet add package Microsoft.EntityFrameworkCore.Tools
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 
 # go to Models folder for creaeting class(es)
 cd Models
